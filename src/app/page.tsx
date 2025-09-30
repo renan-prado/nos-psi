@@ -8,7 +8,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <header className="w-full h-16 justify-between flex items-center px-9">
+      <header className="w-full h-16 justify-between flex items-center px-6 sm:px-9">
         <div className="w-30">
           <Logo.Lettring className="w-20 h-auto text-primary" />
         </div>
@@ -35,7 +35,7 @@ export default function Home() {
       >
         <WhatsappIcon className="w-6 h-6" />
       </Link>
-      <section className="relative pl-10 w-full h-[420px] flex items-center justify-between">
+      <section className="relative px-6 sm:pl-10 w-full min-h-[320px] sm:h-[420px] flex flex-col-reverse sm:flex-row gap-6 sm:gap-0 items-center justify-between">
         <div className="w-full -z-10 h-full absolute top-0 left-0">
           <Image
             width={1440}
@@ -45,25 +45,25 @@ export default function Home() {
             className="w-full h-full object-cover object-top"
           />
         </div>
-        <h2 className="text-4xl leading-12 max-w-lg">
+        <h2 className="text-2xl sm:text-4xl leading-9 sm:leading-12 max-w-lg text-center sm:text-left">
           “Todo mundo carrega nós. Aqui, você encontra um lugar para desatar,
           compreender e se reconectar”
         </h2>
-        <div className="bg-primary rounded-l-4xl overflow-hidden">
+        <div className="hidden sm:block bg-primary rounded-l-4xl overflow-hidden">
           <Image
             width={1440}
             height={585}
             src="/dupla-01.png"
             alt="Dupla"
-            className="size-84 object-cover grayscale opacity-75"
+            className="w-120 h-90 object-cover"
           />
         </div>
       </section>
-      <section className="px-6 bg-primary relative text-secondary-lightest py-20 flex items-center justify-center">
+      <section className="px-6 bg-primary relative text-secondary-lightest py-16 sm:py-20 flex items-center justify-center">
         <div className="text-primary">
           <Logo.Lettring className="w-full h-full absolute top-0 left-0 opacity-[0.03] py-10" />
         </div>
-        <p className="text-lg leading-8 text-white max-w-md text-center font-light">
+        <p className="text-base sm:text-lg leading-7 sm:leading-8 text-white max-w-md text-center font-light">
           <span>Na </span>
           <Logo.Lettring className="w-[60px] h-auto inline-block text-white/90 align-middle mx-0.5 mb-2" />
           <span>
@@ -74,12 +74,12 @@ export default function Home() {
           </span>
         </p>
       </section>
-      <section className="px-8 py-16 text-lg flex flex-col max-w-7xl mx-auto">
+      <section className="px-6 sm:px-8 py-12 sm:py-16 text-base sm:text-lg flex flex-col max-w-7xl mx-auto">
         <h2 className="text-4xl leading-12 max-w-lg">Sobre nós</h2>
 
-        <div className="flex flex-col gap-20">
-          <div className="flex items-center justify-between">
-            <p className="flex-1 max-w-md">
+        <div className="flex flex-col gap-12 sm:gap-20">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-10">
+            <p className="flex-1 max-w-none sm:max-w-md text-center sm:text-left">
               NósPsi nasceu do encontro entre duas psicólogas que compartilham o
               mesmo propósito:{' '}
               <b>
@@ -87,7 +87,7 @@ export default function Home() {
                 habitam em cada um de nós.
               </b>
             </p>
-            <div className="flex justify-end w-2/4 h-80">
+            <div className="flex justify-end w-full sm:w-2/4 h-56 sm:h-80">
               <Image
                 width={400}
                 height={60}
@@ -97,8 +97,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="flex items-center justify-between">
-            <div className="flex justify-end w-2/4 h-80">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-10">
+            <div className="order-2 sm:order-none flex justify-end w-full sm:w-2/4 h-56 sm:h-80">
               <Image
                 width={400}
                 height={60}
@@ -107,7 +107,7 @@ export default function Home() {
                 className="w-full h-full object-cover object-top rounded-2xl"
               />
             </div>
-            <p className="flex-1 max-w-md">
+            <p className="flex-1 max-w-none sm:max-w-md text-center sm:text-left">
               Somos <b>Danielle Sousa</b> e <b>Fernanda Shimizu</b>, psicólogas
               formadas pela Universidade Presbiteriana Mackenzie, com
               experiências clínicas, sociais e educacionais no Brasil e no
@@ -115,8 +115,8 @@ export default function Home() {
               comprometida com a subjetividade de cada pessoa que nos procura.
             </p>
           </div>
-          <div className="flex items-center justify-between">
-            <p className="flex-1 max-w-md text-primary">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-10">
+            <p className="flex-1 max-w-none sm:max-w-md text-primary text-center sm:text-left">
               <span>Na </span>
               <Logo.Lettring className="w-[60px] h-auto inline-block text-primary align-middle mx-0.5 mb-2" />
               <span>
@@ -127,7 +127,7 @@ export default function Home() {
                 seguro para entender, ressignificar e transformar.
               </span>
             </p>
-            <div className="flex justify-end w-2/4 h-80">
+            <div className="flex justify-end w-full sm:w-2/4 h-56 sm:h-80">
               <Image
                 width={400}
                 height={60}
@@ -139,13 +139,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-16 text-lg flex max-w-7xl mx-auto">
-        <div className="bg-primary-light w-1/2 rounded-l-4xl py-16 px-16  text-white">
+      <section className="px-6 sm:px-0 py-12 sm:py-16 text-base sm:text-lg flex flex-col sm:flex-row max-w-7xl mx-auto gap-6">
+        <div className="bg-primary-light w-full sm:w-1/2 rounded-2xl sm:rounded-l-4xl sm:rounded-r-none py-10 sm:py-16 px-8 sm:px-16  text-white">
           <h2 className="italic text-3xl font-base font-light">
             Nossa trajetória inclui
           </h2>
-          <div className="w-full flex mt-10">
-            <ul className="text-base list-disc max-w-md flex flex-col gap-4">
+          <div className="w-full flex mt-6 sm:mt-10">
+            <ul className="text-sm sm:text-base list-disc max-w-none sm:max-w-md flex flex-col gap-3 sm:gap-4">
               <li>
                 Atuação com adolescentes, orientação profissional e treinamento
                 para mercado de trabalho
@@ -171,7 +171,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="bg-secondary w-1/2 rounded-r-4xl overflow-hidden">
+        <div className="bg-secondary w-full sm:w-1/2 rounded-2xl sm:rounded-r-4xl sm:rounded-l-none overflow-hidden h-56 sm:h-auto">
           <Image
             width={400}
             height={60}
@@ -181,20 +181,22 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="text-lg flex mx-auto bg-secondary">
-        <div className="max-w-7xl mx-auto flex gap-20">
-          <div className="mx-auto py-16 w-full">
-            <h2 className="text-4xl leading-12 h-24 max-w-lg">Serviços</h2>
+      <section className="text-base sm:text-lg flex mx-auto bg-secondary">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row gap-10 sm:gap-20 px-6 sm:px-0">
+          <div className="mx-auto py-12 sm:py-16 w-full">
+            <h2 className="text-3xl sm:text-4xl leading-10 sm:leading-12 sm:h-24 max-w-lg">
+              Serviços
+            </h2>
 
-            <div className="flex flex-col gap-20 pt-10">
+            <div className="flex flex-col gap-8 sm:gap-20 pt-6 sm:pt-10">
               <div className="flex flex-col gap-10">
-                <p className="flex-1 max-w-md">
+                <p className="flex-1 max-w-none sm:max-w-md">
                   Na NósPsi, oferecemos psicoterapia individual para
                   adolescentes e adultos, com atendimentos presenciais (em
                   Barueri/SP) e online, sempre com escuta ética, acolhedora e
                   personalizada.
                 </p>
-                <p className="flex-1 max-w-md">
+                <p className="flex-1 max-w-none sm:max-w-md">
                   Para a psicoterapia online, recomendamos que escolha um lugar
                   reservado e confortável, com boa conexão à internet (seja
                   celular ou computador). Usar fones de ouvido ajuda na
@@ -204,13 +206,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mx-auto py-16 w-full">
-            <h2 className="text-4xl leading-12 h-24 max-w-lg">
+          <div className="mx-auto py-12 sm:py-16 w-full">
+            <h2 className="text-3xl sm:text-4xl leading-10 sm:leading-12 sm:h-24 max-w-lg">
               Principais demandas que atendemos:
             </h2>
 
-            <div className="flex flex-col gap-20 pt-10">
-              <ul className="flex flex-col gap-2 list-disc">
+            <div className="flex flex-col gap-8 sm:gap-20 pt-6 sm:pt-10">
+              <ul className="flex flex-col gap-2 list-disc pl-5">
                 <li>Ansiedade e crises de pânico</li>
                 <li>TDAH e dificuldades de foco</li>
                 <li>TOC (Transtorno Obsessivo-Compulsivo)</li>
@@ -226,9 +228,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="faq" className="px-8 py-16 text-lg">
+      <section
+        id="faq"
+        className="px-6 sm:px-8 py-12 sm:py-16 text-base sm:text-lg"
+      >
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl leading-12 max-w-lg mb-8">
+          <h2 className="text-3xl sm:text-4xl leading-10 sm:leading-12 max-w-lg mb-6 sm:mb-8">
             Perguntas frequentes
           </h2>
 
