@@ -35,7 +35,7 @@ export default function Home() {
       >
         <WhatsappIcon className="w-6 h-6" />
       </Link>
-      <section className="relative px-6 sm:pl-10 w-full min-h-[320px] sm:h-[420px] flex flex-col-reverse sm:flex-row gap-6 sm:gap-0 items-center justify-between">
+      <section className="relative px-6 xl:pl-10 w-full min-h-[320px] xl:h-[420px] flex flex-col xl:flex-row gap-6 xl:gap-0 items-center justify-between py-20 xl:py-0">
         <div className="w-full -z-10 h-full absolute top-0 left-0">
           <Image
             width={1440}
@@ -45,18 +45,22 @@ export default function Home() {
             className="w-full h-full object-cover object-top"
           />
         </div>
-        <h2 className="text-2xl sm:text-4xl leading-9 sm:leading-12 max-w-lg text-center sm:text-left">
-          “Todo mundo carrega nós. Aqui, você encontra um lugar para desatar,
-          compreender e se reconectar”
-        </h2>
-        <div className="hidden sm:block bg-primary rounded-l-4xl overflow-hidden">
-          <Image
-            width={1440}
-            height={585}
-            src="/dupla-01.png"
-            alt="Dupla"
-            className="w-120 h-90 object-cover"
-          />
+        <div className="flex flex-col xl:flex-row items-center justify-between gap-6 xl:gap-0 w-full">
+          <h2 className="text-2xl xl:text-4xl leading-9 xl:leading-12 max-w-lg text-center xl:text-left order-1 xl:order-1">
+            "Todo mundo carrega nós. Aqui, você encontra um lugar para desatar,
+            compreender e se reconectar"
+          </h2>
+          <div className="order-2 xl:order-2 flex justify-center xl:justify-end w-full xl:w-auto h-56 xl:h-auto">
+            <div className="bg-primary rounded-2xl xl:rounded-l-4xl xl:rounded-r-none overflow-hidden w-full xl:w-120 h-full xl:h-90">
+              <Image
+                width={1440}
+                height={585}
+                src="/dupla-01.png"
+                alt="Dupla"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <section className="px-6 bg-primary relative text-secondary-lightest py-16 sm:py-20 flex items-center justify-center">
@@ -173,8 +177,8 @@ export default function Home() {
         </div>
         <div className="bg-secondary w-full sm:w-1/2 rounded-2xl sm:rounded-r-4xl sm:rounded-l-none overflow-hidden h-56 sm:h-auto">
           <Image
-            width={400}
-            height={60}
+            width={2400}
+            height={1200}
             src="/nos-sofa.png"
             alt="About"
             className="w-full h-full object-cover object-top"
@@ -182,8 +186,8 @@ export default function Home() {
         </div>
       </section>
       <section className="text-base sm:text-lg flex mx-auto bg-secondary">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row gap-10 sm:gap-20 px-6 sm:px-0">
-          <div className="mx-auto py-12 sm:py-16 w-full">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row gap-10' sm:gap-20 px-6 sm:px-0">
+          <div className="mx-auto py-12 sm:py-16 w-full px-6">
             <h2 className="text-3xl sm:text-4xl leading-10 sm:leading-12 sm:h-24 max-w-lg">
               Serviços
             </h2>

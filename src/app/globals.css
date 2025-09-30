@@ -59,6 +59,9 @@
 }
 
 @theme inline {
+  /* breakpoints */
+  --breakpoint-xl: 1080px;
+
   /* primary */
   --color-primary: var(--color-brand-green-3);
   --color-primary-light: var(--color-brand-green-2);
